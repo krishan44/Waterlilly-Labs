@@ -91,7 +91,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
 
 }
 
@@ -136,8 +136,7 @@
 
 
 
-
-
+/* Mobile Responsiveness */
 @media screen and (max-width: 425px) {
     .welcome{
         height: 180px;
@@ -161,10 +160,68 @@
         margin-right: 5px;
     }
 
-   
+    
 
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Heading alignment small mobile */
+  @media screen and (min-width:320px) {
+    .WebHead{
+        position: relative;
+        left: 60px;
+    }
+  }
+
+/* Heading alignment medium mobile */
+  @media screen and (min-width:375px){
+    .WebHead{
+        position: relative;
+        left: 80px;
+    }
+
+    .welcome{
+        max-width: 4000px;
+    }
+
+  }
+
+  /* Heading alignment large mobile */
+  @media screen and (min-width:425px){
+    .WebHead{
+        position: relative;
+        left: 100px;
+    } 
+  }
+
+  /* Heading alignment after large mobile */
+  @media screen and (min-width:426px){
+    .WebHead{
+        position: relative;
+        left: 0;
+    } 
+  }
+
+
+  /* Video aspect Ration Adjusment */
 
 @media (min-aspect-ratio:16/9){
     .backVideo{
